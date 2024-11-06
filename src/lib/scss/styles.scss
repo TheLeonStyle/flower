@@ -1,0 +1,17 @@
+@use "_fonts.scss";
+@use "_null.scss";
+@use "_mixins.scss";
+@use "_variables.scss";
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: $colorBlack;
+	color: $colorMain;
+}
+
+.text {
+	font-size: rem(56);
+	@include adaptiveValue("font-size", 56, 36, 991, 320, 1);
+	font-weight: 700;
+	margin-bottom: rem(30);
+}
